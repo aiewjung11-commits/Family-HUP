@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Family Hub — บ้านเรา</title>
+<meta name="theme-color" content="#0a2d6e">
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIkZhbWlseSBIdWIiLCAic2hvcnRfbmFtZSI6ICJGYW1pbHkgSHViIiwgInN0YXJ0X3VybCI6ICIuIiwgInNjb3BlIjogIi4iLCAiZGlzcGxheSI6ICJzdGFuZGFsb25lIiwgImJhY2tncm91bmRfY29sb3IiOiAiI2YwZjZmZiIsICJ0aGVtZV9jb2xvciI6ICIjMGEyZDZlIiwgImljb25zIjogW3sic3JjIjogImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBTUFBQUFEQUNBWUFBQUJTM0d3SEFBQUlNRWxFUVZSNG5PM2QyVzhiVlJUSDhUdVJuNUlxdG9NRWlmZ1RVSmVVdFduVEpXMkJQd0NCNkNiMnBWQkt5OUlGSko2Z0xmdStyMjBweTE4QWRFKzZDQUVOYmNXZmdKSStOTEVSeVd0NWNKSW0yRTVtN0xsejVzejVmcVFyRUUzRzF6Ty9PK2Vlc1lIQUNXdWQvOVFWNlRsQXp2akZkd1BKMTAvOHhRazhacFAwZ2tqa3hWcm5ieVgwaUd6ODRqdmU4K24xQlFnKzR1QnpJWGc1Y091Q3B3aytZamQrNGUzWTh4cnJBUWsra2hEblFvamxRSzBMdGhGOEpHNzh3bHRONTdlbDJRTVFma2lKSTN0TnJhRFdoZHNKUDhTTm4zK3o0UnczOUlzRUgyblV5RUtJL0F1dEM1OGgvRWl0OGZOdlJNcDBwQjZBOENQdG9tWTA5R3BwVy9RczRZY2FZMysrSGlyYm9Tb0E0WWMyWVRPYkMzYzQwUy9zQWQ3TVdRSGFGajNIM1I4cWhjbnVyTGYydHU3bkNUL1VHeHQ4dFc3TzYvNUJXL2NPd28vTUdCdmNWelByVFg4VkF0Q3M1cXBvNjk3SjNSK1pNemE0dHlydnRaOEM4ZEFIUmxSRnZXM3hMdTcreUt5eGMzdG1aSjRlQUtiTldBMXRpM2R6OTBmbWpaMTdaU3IzTTNxQWdMMC9qSm1LL0x3YlgrRHVEelArL2VQbHdEbDZBQmgzZFF2RS9nY0d0VGpuM0x5YlhtVDdBMU1tTXo5UkFiajd3eVo2QUpoV3FRRHMvMkZVTU8vbWw5ai93eXkyUURBdFJ3TU15M0xrSDVibEFsWUFES01IZ0duMEFEQ05IZ0NtVVFGZ0dqMEFUS01Dd0RSNkFKaEdCWUJwOUFBd3JhVlNBUmhTNDUrenU4WG5ZSG0wcEdBT1pzYy9aM2M1NXliK21vTDVXQnhCKzVJOS9Qc0FBc3BuZGxiOXMzelBYb0daMkJhMEw5bkxBa2hRK2N5T09YOG0zN012Z1puQU9jY1dLTWtSSnZ6T1RmeGNDdVpyWWRBRUp6VEtwOE9GZjFMbDUrWG5uZlhCWTlBRWxFOC9uK2p2SWJ5Z3ZlZFZlZ0JQeXFlZmkrMVkrYVd2eFhZc1hFVVA0R25FR1g3bkpvNlhndmVWdFVFUDRHR1VUOFViL2ttVjQ4cS92eXdOZW9DWWxVODlxL3I0MWdUdFMxK25CNGhCK2RRemliNWVmdGtiaWI1ZVZnWHR5MWdBelNvUEpCdis2Zks5TElSbTBBTTBPU1RENzl6azRwTS9EMXBIaS93VTlJN3l3SGFYQnVXQjdlTG5RdTNJTDN1VExWQkVwWUZ0MGxPb3FkRDdsdlFVMUFueXZTeUFLRXI5NlF6L2RJWGxMSVN3NkFFaURBM2hkMjV5a2NxZkx3MkRCUkJ5bFBxZmRwcFU1aXQvM3RJKytDQnNEcVgrcmE3VXYxVjZHZzNST3U4a0Jmbmw3OUFEMUZFNitaVDBGR0pUV1BHdTlCUlNpUXBRUjViQzcxejIzazljNkFGcWpLeUdwZksrNU05dm1nWVZZSnJTeVMydWRIS0w5RFM4eXZyN2l5cklyM2lQSHNBNVZ6cnhwUFFVRWxWWStiNzBGRktCQ3VEc2hkKzV5bnUyK0w3L0x5aXNlTjkwQlJnOThZVDBGTVFWVjM0Z1BRVXhRV0dselFVd2VwemdUMWRjWlhNUm1Id0tSUGlyVmM2Si9MWGhLWkJubzhjM1MwOGh0VWFQYnpaM2ZreFZBR3NYdDFHVjh5Ui92WklZUVdIVmg1bnZBVWFQUFM0OUJaV0tmUjlKVDhHN3pGY0F3dCs0eXJtVHY0WStSNlo3Z05GamowbFBRYjJzbjhPZ3NPcmpURzZCUm84OUtqMkZ6Q24yZlNJOWhkZ0ZoYjVQTXJVQVJvOCtJajJGVEN1dS9sUjZDckhLMUJhSThQdVh0WE9jbVNZNGF4Y216U3JuV3Y2YXh6R0NZdCtuNnJkQUkwY2ZscDZDV1IyclA1T2VRbE9DNHVyUDFDNkFrU01QU1U4QnpybU9OWjlMVDZGaGFuc0F3cDhlbXErRnloNUE4d25QcXNvMWtjOUcxS0d1QW93Y2VWQjZDcWhqNU1pRDZxNVBVRnp6aFlvZVlPVHdBOUpUUUFRZGE3K1Vua0lvS2lvQTRkZEh5elZMZlErZzVVU2lXdVhheVdkSWJROHdjdmgrNlNtZ1NXbS9oa0Z4N1ZlcDZ3RkdmcmxQZWdyd29PUDJyNlduVUNWMUZZRHdaMWNhcjIycWVvQTBuaURFcTNLTjViTTJPWUtPMjc5SnhSYm84cyticEtlQUJGMXp4MzdwS1Rqbm5Qd0NJUGkyU1M4RTBTMFE0VWNsQTNJWkZHdUNMLys4VWVxbGtUS1NXUWc2N2ppUWloNWdMcGQvMmlBOUJVUnd6WjBIcGFjUVN1b2Vnd0pKeWxYMlFrRGNkT1NLQ2dEVGNpN1FzVktoakpKY1VRRmdHajBBUE5HUkt5b0FUTXNGU3ZacTBFVkxycWdBTUkwZUFKN295RlZPZWdKWmMvMTlmM2s5L3Q5ZjMrRDErTmJ3T1FEOFVKSXJ0a0R3UkVldWFJSmhHaFVBbnVqSVZVN0pQS0dOa2x4UkFlQ0pqbHpSQThBMEtnQTgwWkdybkpMSHRWQkdTNjZvQVBCRVI2N29BV0FhWDRXQUgwcHlSUVdBYWZRQThFUkhycWdBTUkwZUFING95UlZiSUhpaUkxZHNnV0FhRlFDZTZNZ1ZYNGVHSDBweWxRdTB6QlNxYU1rVlBRQk1vd2VBSnpweVJROEFQNVRraWdvQVQzVGtpaDRBcGxFQjRJbU9YTkVEd0E4bHVhSUN3Qk1kdWFJSGdHbFVBSGlpSTFmMEFQQkRTYTc0TGhDODBKSXJ0a0R3UkVldTJBTEJEeVc1b2dMQUV4MjU0akVvVEtNQ3dCTWR1UXF1dmV2b0ZlbEpBRktvQURDTkhnQ21VUUZnR3A4RHdEUXFBRXpMRVg5WVJnV0FhZlFBTUkwS0FOTUM1NXk3N3U0QlBnMkdPWmQrN0EzNElBeW01Wnh6YXY1M05rRGNxQUF3YmVyV2Y5MDlwK2tEWU1hbEg1WUd6bEVCWUZ4dTZ1L29BMkRRVkFXNDlIMFBLd0FtVE05NmJ2b2ZhUGx2dVFCeHFVcDg1NzFuYVlhUldjUGZMWm1SK1Z6MWoxQUZZRWZWVTZEaDcyNWpCU0NUYW1XN1JnVndqaW9BSytvbXZYUGRyL1FDeUl6aFE3Zld6SHFkQ3VBY1ZRQVcxUDBrZVBqUUxhd0FaTUpzV1o0ejVKM3JmbU1yQkxXR0Q5MDhhOFpEM2VVNzEvL09Jb0E2dzkvZU5HZSsrVEljVEF1OXorOWMvd2RWQUdvTWYzdGpxR3hIYW5TN1dBUlFZQ2hrK0oxcjRGbG4xNFp6TEFLazF0REJ4WkV5SGJrSGlQb0NRRklheVdaVFllN2FNRWcxZ0xpaGc5ME41N2lwcDBETnZEQVFoMll6R0V1QXV6YitTU1ZBNG9ZT0xHbzZ2N0hld1ZrSVNFSWN3Wi9rWlF2VHRmRThDd0d4R3pxd01QYThldDNEc3hBUUJ4L0JuNVJJRTl1MTZRSUxBWkVON1YvZ1BaK0pQOFZoTVdBMlNZUitPdkhIbUYyYkxySWdEQnZhUDE4MGcvOEIvZ0c3MTJwZFJjQUFBQUFBU1VWT1JLNUNZSUk9IiwgInNpemVzIjogIjE5MngxOTIiLCAidHlwZSI6ICJpbWFnZS9wbmciLCAicHVycG9zZSI6ICJhbnkifSwgeyJzcmMiOiAiZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFnQUFBQUlBQ0FZQUFBRDBlTlQ2QUFBVVBVbEVRVlI0bk8zZGFhOWQ1WGtHNEwzUStXUTdaekJTc2RXZlVERkRXenlic1QrZ1Nwc0VhT2FwQ1RNSjZhUktsUkxDREpsbkFtVDhCU0dNeG9aMHlBU29QNkd5K1lEUE9TajRLLzJBajluZ00reTk5bHJySFo3cmtxd2trbVcvZTUyOTFuM3Y1MzI5MDR3WTFMYnpiM29yOVJvQWNuVHExVWVhMUd1SXhNWHVnWkFINkpaeTBEMFhkRWJDSGlBTnBXQTJMdDZVQkQ1QW5oU0M2YmhZRXhENkFHVlJCcmJtQXExRDRBUFVSU0U0bXdzeVp0djVOd3QrZ0lxZGV2Vmh1WGRhK0FzaDlBRmlpbDRHd3I1NHdRL0FhQlMzQ0lSNzBZSWZnUFZFS3dJaFhxelFCMkFhRWNwQTFTOXcyd1czQ0g0QVdqdjF5a1BWNXVRNXFSZlFGK0VQd0t4cXpwTHFtazNOUHl3QTBxbHRHbEROaXhIOEFBeWhsaUpRL0lzUS9BQ2tVSG9SS0hyeDJ5NjRWZmdEa015cFZ4NHNOa2VMWExqZ0J5QW5KUmFCNHY0VmdQQUhJRGNsWmxOUkJhREVDd3hBREtWbFZCRWppOUl1S2dDeGxiQWxrUDBDdDExNG0vQUhvRGluWG40ZzY0ek5lZ3RBK0FOUXF0d3pMTXQya3Z0RkE0QnA1RGdOeUc0Q0lQd0JxRTJPMlpaVkFjanhBZ0ZBRjNMTHVHeEdFdHN1dkQyckN3TUFmVGoxOHYxWlpHOFdFd0RoRDBBVXVXUmU4Z0tReTRVQWdLSGtrSDFKQzBBT0Z3QUFVa2lkZ2NrS1FPb1hEZ0NwcGN6Q0pBY1J0bDEwaC9BSGdOTk8vZkcrd2ZONDhMOXd1L0FIZ0xPOE9YQUpHSFFMUVBnRHdQcUd6c2pCQ29Ed0I0RE5EWm1WZ3hRQTRROEFreGtxTTN2ZmI5aCswWjNDSHdDbTlPWWY3KzAxbzN1ZEFBaC9BR2luN3d4Ti9rMkFBTUR3ZWlzQVB2MER3R3o2ek5KZUNvRHdCNEJ1OUpXcG5SOHcySDd4RjRRL0FIVHN6VC9jMDJsbU93TUFBQUYxV2dCOCtnZUFmblNkc1owVkFPRVBBUDNxTW1zN0tRRENId0NHMFZYbXpuWHhoeVQ2ZnhVR0FGcWFlUUt3L2VJdit2UVBBQVBxSW50bktnRENId0RTbURXRC9UTkFBQWlvZFFIdzZSOEEwcG9saTJjNEJPamdId0NVcWxXS2I3L2tMcC8rQVNBVGIvNys3cW56M0JrQUFBaG82Z0xnMHo4QTVLVk5OazlWQUlRL0FPUnAyb3llOGhDZ2czOEFVSU9KSndEYkwvbVNULzhBa0xGcHN0b2hRQUFJU0FFQWdJQW1LZ0RHL3dCUWhra3plOEpEZ0E3L0FVQk50a3oyN1pmK2swLy9BRkNZTjMvMzVVMHozaGtBQUFobzAzYXd3NmQvQUNqV256YVpBcGdBQUVCQVd4d0NkUGdQQUdxMDRRUmd4NlgvYlB3UEFBWGJMTXR0QVFCQVFPc1dBSi8rQWFBT0cyVzZDUUFBQkxUQklVQ0gvd0NnWnVzWEFQa1BBRlU3YXd0Z3gyWC9ZdjhmQUNxeVhyWTdBd0FBQVNrQUFCRFF1M2I3ZDF6MnI4Yi9BRkNwUC8zMlA4N2t2Z2tBQUFTa0FBQkFRQW9BQUFSMHBnRFkvd2VBdW8xbi9kZ1hBZm4ySHdDSTRwMENJUDhCSUF4bkFBQWdJQVVBQUFJNlp6UWFqWFpjL204T0FBSkFBR3VaZi9vTWdBTUFBQkNKTFFBQUNFZ0JBSUNBRkFBQUNFZ0JBSUNBSEFJRWdJQ2FIWmYvdTM4Q0NBREJ6UG53RHdEeE9BTUFBQUVwQUFBUTBGeGpEd0FBd2pFQkFJQ0FGQUFBQ0VnQkFJQ0FGQUFBQ0dqT3R3QUNRRHdtQUFBUWtHOENCSUNBVEFBQUlDQUZBQUFDY2dnUUFBSXlBUUNBZ0JRQUFBaElBUUNBZ0JRQUFBaklJVUFBQ01nRUFBQUM4azJBQUJDUUNRQUFCS1FBQUVCQURnRUNRRUFtQUFBUWtBSUFBQUVwQUFBUWtBSUFBQUU1QkFnQUFaa0FRR0J2L09aTHFaY0FKTks4NzRvdnY1VjZFY0R3M25qcG5mQ2YzL09WaENzQlVqQUJnSURHdzMrOS93M1V6d1FBQXBrazZFMERJSWJtZlZkOFJRR0FBTjU0NmE2SmYrLzhucnQ3WEFtUUExc0FFTUEwNGQvbTl3UGxhZVpOQUtCcXF6T0UrWUpKQUZUTEJBQXF0ZnJTWFRPRi85cWZBZFJKQVlBS2RSbmNYUlFKSUQvTi9CVjMyd0tBaXF5KzlNWGUvdXlGUFYvdDdjOEdobVVDQUJYcE0veUgrUE9CNFNnQVVJbWh3bGtKZ0RvMDgzdHNBVURKVmw5TUU4Z0xlMjBIUU1sTUFLQmdxY0ovN2U5TytmY0RzMm5tOTN6VkJBQUt0UHJpRjFJdjRZeUZ2ZmVrWGdJd0pSTUFLRkJPNFQ4YTViY2VZR3NLQUJRbTE3RE5kVjNBK213QlFDRktDbGhiQXBBL0V3QW9RRW5oUHhxVnQxNklxSm5mYzQ4SkFHUnM5Y1U3VXkraHRZVzk5NlplQXJBQkV3RElXTW5oUHhxVnYzNm9tUUlBR1ZwOThjNXF3ck9XMXdHMWFlYjMyZ0tBbkt3ZXF6Y3dGL2JaRW9CY21BQkFSbW9PLzlHby90Y0hKV25tOTk1ckFnQVpXRDEyUitvbERHWmgzMzJwbHdEaG1RQkFCaUtGLzJnVTcvVkNqaFFBU0dqMTJCMWh3ekRxNjRaY0tBQ1FpQUNNWFlBZ05RVUFFaEI2NytaNndQQ2ErYjMzT1FRSUExbzlkbnZxSldScllkLzlxWmNBWVpnQXdJQ0UvK1pjSHhpT0FnQURXRDEydTNDYmtPc0V3MmptOTlrQ2dENnRIaFZvYlMzc3R5VUFmVEVCZ0I0Si85bTRmdENmWm43Zi9TWUEwSVBWbzdlbFhrSTFGdlkva0hvSlVCMFRBT2pZNnRIYmhIL0hYRS9vbmdJQUhSSlUvWEZ0b1ZzS0FIUkVRUFhQZEFXNjB5dzRBd0F6V3hGS2cxdDBMZ0JtMGl6c2UwQUJnQm1zSEwwMTlSTENXdHovWU9vbFFMRnNBVUJMSzBkdkZmNkp1ZjdRbmdJQUxRaWVmQ2hpMEU2enNOOFdBRXhqNVFWaGs2dkZBN1lFWUZJbUFEQUY0WjgzUHgrWVhMT3cvMEVUQUpqQXlndTNwRjRDRTFvODhGRHFKVUQyVEFCZ0N5c3YzQ0w4QytQbkJWdFRBR0FUZ3FSY2lodHNUZ0dBRFFpUE92ZzV3dm9VQUZpSDBLaUxueWVjclZuWS81QkRnSERheWdzM3AxNENQVm84OEhEcUpVQTJUQURnTk9GZlB6OWplSWNDQUNQQkVNbktDemY3ZWNOSUFRQmhFSlNmTzlFMUN3ZWNBU0N1bFNOQ0lMckZnODRGRUZPemNPQmhCWUJ3Vm83Y2xIb0paR1R4NENPcGx3Q0Rzd1ZBT01LZjkvS2VJQ0lGZ0ZBODZObkl5cEdidkQ4SVJRRWdEQTkzSnVGOVFoUUtBQ0Y0cURNTjd4Y2lhQllPUE9JUUlOVmFPZkw1MUV1Z1lJc0h2NVo2Q2RBYkV3Q3FKZnlabGZjUU5WTUFxSklITjExWk9mSjU3eWVxcEFCUUhROXIrdUI5UlcyYWhZUE9BRkNIbGVjOW9PbmY0aUhuQXFoRHMzRHdhd29BeFZ0NS9uT3BsMEFnaTRlK25ub0pNRE5iQUJSUCtETzBsZWMvNTMxSDhSUUFpdVloVEVyZWY1Uk1BYUJZSHI3a3dQdVFVaWtBRk1mNGxkeDRQMUtpWnVIZzF4MENwQmdyei85ajZpWEFoaFlQZlNQMUVtQml6YUlDUUNHV2hUK0ZXRklFS0lBdEFJb2cvQ21KOXlzbFVBRElub2NwSmZLK0pYZk40aUZiQU9ScCtUa1BVTXEzZE5oMkFIbHFGZzk5UXdFZ084dlBmVGIxRXFBelM0ZS9tWG9KY0JaYkFHUkgrRk9iNWVjKzYzMU5kaFFBc3VJaFNjMjh2OG1KQWtBV2ZFSWlDdTl6Y3FFQWtKd0hJdEY0ejVPRFp2SFFOeDBDSkpubDV6NlRlZ21Rek5MaGI2VmVBb0daQUpDTThDZTY1ZWMrNHo0Z0dRV0FKRHowNEIzdUIxSlFBQmlVVHp5d1B2Y0ZRMnNXRHpzRHdEQ1duL1dBZzYwc1hlbGNBTU5vRmc5L1N3R2dkOHZQZmpyMUVxQVlTMWQrTy9VU0NNQVdBTDBUL2pDZDVXYy83YjZoZHdvQXZmRVFnOW00ZitpVEFrQXZQTGlnRys0bCtxSUEwRGtQTE9pV2U0bytOSXVIdiswUUlKMVpmdlpUcVpjQVZWdTY4anVwbDBBbFRBRG9qUENIL3JuUDZJb0N3TXlXbi8yVWh4SU15UDFHRnhRQVp1SkJCR200OTVpVkFrQnJIa0NRbG51UVdUU0xWMzdISVVDbXR2ek1KMU12QVJpemROVjNVeStCd3BnQU1EWGhEL2x4WHpJdEJZQ0pMVC96U1E4WnlKajdrMmtvQUV6RWd3WEs0RjVsVWdvQVcvSkFnYks0WjVsRXMzamxkeDBDWkVQTHozd2k5UktBR1N4ZDliM1VTeUJUSmdDc2EvbVpUd2gvcUlEN21JMG9BSnpGQXdQcTRwNW1QYzJTTFFER25QU2dnR3J0dEIzQUdCTUF6aEQrVURmM09PT2FwYXUrWndMQTZPVFRIMCs5QkdCQU82LytmdW9sa0pnSlFIQW5uLzY0OEllQTNQY29BSUY1QUVCc25nR3hLUUJCdWZHQjBjaXpJRElGSUNBM1BERE9NeUdtWnVtcTd6c0VHTWpKcHorV2VnbEF4blplL1lQVVMyQWdKZ0JCbkh6Nlk4SWYySkxuUkJ3S1FBQnVhR0FhbmhreEtBQ1ZjeU1EYlhoMjFFOEJxSmdiR0ppRnJjTzZOVXRYLzhBaHdNcWNmT3FqcVpjQVZHYm5OVDlNdlFRNlpnSlFHZUVQOU1HenBUNEtRRVhjb0VDZlBHUHFvZ0JVd28wSkRNR3pwaDRLUUFYY2tNQ1FUajcxVWMrZENqUkxWLy9RSWNCQ25YenFJNm1YQUFTMzg1b2ZwVjRDTFprQUZFcjRBem53TENxWEFsQWdOeHlRRTgra01pa0FoWEdqQVRueWJDcVBBbEFRTnhpUXM1TlBmY1J6cWlETjBqVS9jZ2d3Y3lkLy9lSFVTd0NZeXM1ckgwMjlCTFpnQXBBNTRRK1V5TE1yZndwQXh0eEFRTWs4dy9LbUFHVEtqUVBVd0xNc1g4NEFaTWJOQXRUS3VZQzhORXZYUEtvQVpPTGtyLzhoOVJJQWVyWHoyaCtuWGdLbjJRTEloUEFISXZDc3k0Y0NrQUUzQkJDSloxNGVGSURFM0FoQVJKNTk2VGtEa0lnM1A4RGJuQXRJbzlsNTdZOFZnSUc5L3VTTnFaY0FrSlZ6cjNzczlSTENzUVV3TU9FUGNEYlB4dUVwQUFQeUJnZlltR2Zrc0JTQWdYaGpBMnp0OVNkdjlMd2NpQUxRTTI5bWdPbDVidlpQQWVpUk56QkFlNTZoL1Rwbk5HcEdmblgveXhzWFlIWnZQMHZUUDlOci9HVUMwSVBYbjd3aDlSSUFxdUdaMm85bTU3V1ArUjZBam5pVEF2VHIzT3NlVDcyRWFwZ0FkRVQ0QS9UUHM3WTdDa0FIdkNFQmh1T1oyNDFtNTNXUDJ3SW8yT3UvdWo3MUVvQ2d6djJiSjFJdmdSbVlBQUJBUUFvQUFBU2tBQUJBUUFvQUFBUTA5L1kzQWdIQXRPUkh5VXdBQUNBZ0JRQUFBbElBQUNBZ0JRQUFBcG9iTlE1eEFOQ0MvQ2lhQ1FBQUJLUUFBRUJBQ2dBQUJLUUFBRUJBdmdrUWdKYmtSOGxNQUFBZ0lBVUFBQUpTQUFBZ0lBVUFBQUx5VFlBQXRDTS9pamJueHdkQUcvS2piTFlBQUNBZ0JRQUFBbElBQUNBZzN3UUlRRXZ5bzJRbUFBQVFrQUlBQUFFcEFBQVEwRnpxQlVCMGYvN2gvMDI5aENUKzc5Ry9TTDBFQ00wM0FRTFFqdndvbWkwQUFBaElBUUNBZ0JRQUFBaElBUUNBZ0h3VElBQXR5WStTbVFBQVFFQUtBQUFFcEFBQVFFQUtBQUFFNUJBZ0FDM0pqNUxOK2ZrQjBJcjhLSm90QUFBSVNBRUFnSUFVQUFBSXlDRkFBRnFTSHlVekFRQ0FnQlFBQUFoSUFRQ0FnQlFBQUFqSUlVQUFXcElmSmZOTmdBQzBJeitLWmdzQUFBS2FVK0FBYUVOK2xNMEVBQUFDY2dnUWdKYmtSOGxNQUFBZ0lBVUFBQUpTQUFBZ0lBVUFBQUp5Q0JDQWx1Ukh5WHdUSUFEdHlJK2kyUUlBZ0lBVUFBQUlTQUVBZ0lBY0FnU2dKZmxSTWhNQUFBaElBUUNBZ0JRQUFBaElBUUNBZ0J3Q0JLQWwrVkV5M3dRSVFEdnlvMmkyQUFBZ0lBVUFBQUpTQUFBZ0lJY0FBV2hKZnBUTUJBQUFBbElBQUNBZ0JRQUFBbElBQUNBZ2h3QUJhRWwrbE13RUFBQUM4bFhBQUxRalA0cG1BZ0FBQVNrQUFCRFFYR09HQTBBTDhxTnNKZ0FBRUpBQ0FBQUJLUUFBRUpBQ0FBQUIrU1pBQUZxU0h5VXpBUUNBZ0h3VElBRHR5SStpbVFBQVFFQUtBQUFFNUJBZ0FDM0pqNUtaQUFCQVFBb0FBQVNrQUFCQVFBb0FBQVRrRUNBQUxjbVBrcGtBQUVCQXZna1FnSGJrUjlGTUFBQWdJQVVBQUFKeUNCQ0FsdVJIeVV3QUFDQWdCUUFBQWxJQUFDQWdCUUFBQW5JSUVJQ1c1RWZKVEFBQUlDRGZCQWhBTy9LamFDWUFBQkNRQWdBQUFUa0VDRUJMOHFOa0pnQUFFTkNjL2daQUcvS2piQ1lBQUJDUUFnQUFBVGtFQ0VCTDhxTmtKZ0FBRUpBQ0FBQUIrU3BnQU5xUkgwVXpBUUNBZ0J3Q0JLQWwrVkV5RXdBQUNFZ0JBSUNBRkFBQUNFZ0JBSUNBSEFJRW9DWDVVVElUQUFBSVNBRUFnSUNhUC92Ylo5NUt2UWdBWUZnbUFBQVFrRU9BQUJDUUNRQUFCS1FBQUVCQUNnQUFCS1FBQUVCQURnRUNRRUFtQUFBUWtBSUFBQUhOMlFFQWdIaE1BQUFnSUljQUFTQWdFd0FBQ0VnQkFJQ0FGQUFBQ0dqT0NRQUFpTWNoUUFBSXlCWUFBQVNrQUFCQVFNMW9OQnFkOS80amI2VmVDQUF3ak5kK2ViQXhBUUNBZ09iZS9nOEhBUUVnRWhNQUFBaElBUUNBZ0JRQUFBaElBUUNBZ002Yy9qdnYvVWY5VTBBQXFOeHJ2OXpmakVZbUFBQVFrZ0lBQUFFcEFBQVEwTnlaLythN2dBQWdqSGZGL25sL2Q4eEJRQUNvMUd1LzJIY205MjBCQUVCQUNnQUFCS1FBQUVCQTd5b0E0M3NEQUVBOTNwdnhjMmYvRmgwQUFHcG5Dd0FBQWpxckFMejJpNzFHQUFCUWtmV3kzUVFBQUFKYTV3ekF5REVBQUtqYytnVkFBd0NBcXEyN0JmRGF6L2RvQUFCUWdZMHkzUmtBQUFob3d3SmdDZ0FBWmRzc3kwMEFBQ0NnRFE0QnJqRUVBSUFhYlpud3UvNytOMjhOc1JBQW9Ec25mbjdGcGhsdkN3QUFBdHF5QUd6VklBQ0F2RXlTM1Z1Y0FUaE5CUUNBcWt3Yzdicys4Si9PQWdCQTVrNzg3SzhueW5abkFBQWdJQVVBQUFLYXVBQk1PbElBQU5LWUpxdE5BQUFnb0trLzFlLzZ3SDg1REFnQW1UbnhzNythS3RPbm5nQk0reGNBQVAxcWs4MjJBQUFnb0ZZRndCUUFBUExRTnBNbit5YkE5YWdBQUZDc21XSjgxd2YvMjRGQUFFamt4RS8vc25XT093TUFBQUhOVkFCbWFSNEFRSHV6WnZETUV3QWxBQUNHMVVYMjJnSUFnSUE2Ky9TKzY0UC80MEFnQVBUc3hFOHY3eVM3TzVzQWRMVWdBR0I5WFdadHAxc0FTZ0FBOUtQcmpIVUdBQUFDNnJ3QW1BSUFRTGY2eU5iZXduclhoMzdyVUNBQXpPakVUeTdySmF0NzJ3TG9hOEVBRUVXZldlb01BQUFFMUdzQk1BVUFnSGI2enREZUp3QktBQUJNWjRqc0hDeWNkMzNvZHc0RkFzQVdUdnprMGtHeWViQXpBRU85SUFBbzFaQlpPZWdoUUNVQUFOWTNkRVltQ2VUZHRnTUE0SXpqQ1Q0Z0ovbG5nQ2xlS0FEa0tGVW1KZzNpM2RmLzNpUUFnTENPUDNGSnNoeE8ra1ZBS1Y4NEFLU1VPZ09UZnhOZzZnc0FBRVBMSWZ1U0Y0RFJLSThMQVFCRHlDWHpzaWdBbzFFK0Z3UUErcEpUMW1XemtEVzdyLytEZzRFQVZPZjRFeGRubGJuWlRBRFc1SGFCQUdCV09XWmJkZ3NhWnhvQVFNbHlEUDQxMlUwQXh1Vjg0UUJnTTdsbldOWUZZRFRLL3dJQ3dIdVZrRjNaTDNEYzdodithRXNBZ0d3ZGYveWlZbkkxK3duQXVKSXVMQUN4bEpaUlJSV0EwYWk4Q3d4QS9Vck1wdUlXUE02V0FBQXBsUmo4YTRxYkFJd3IrY0lEVUxiU002am94WS9iZmNQTHBnRUE5Tzc0NHhkV2taMVZ2SWh4aWdBQWZhZ2wrTmRVOVdMR0tRSUFkS0cyNEY5VDlCbUF6ZFQ2QXdOZ09EVm5TYlV2Ykp4cEFBRFRxRG40MTFUL0F0OXI5NDJ2S0FNQW5PWDRZeGVFeXNSUUwzYWNJZ0RBYUJRditOZUVmTkhqRkFHQW1LSUcvNXJRTC82OWxBR0F1a1VQL1hFdXhEb1VBWUM2Q1A2enVTQVQySDNqcXdvQlFFR09QM2ErZk51Q0N6UWxaUUFnVDBKL09pN1dqQlFDZ0RRRS9teGN2QjRvQlFEZEV2YmRjMEVIcGh3QXJFL0lEK3YvQVlSTWs5clNnWmdRQUFBQUFFbEZUa1N1UW1DQyIsICJzaXplcyI6ICI1MTJ4NTEyIiwgInR5cGUiOiAiaW1hZ2UvcG5nIiwgInB1cnBvc2UiOiAiYW55In1dfQ==">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAHuklEQVR4nO3c2XMUVRTH8XupeUqozEyo0qT8Eyx2UFkSQtj8AywtEChcUHFhX9UqX7Rk33dFkVX9C0QISyDghmzln2AlPJBkKMgrPkwSA5lJpnu655x7+/upugUFk+4z078cTt8ZYo2gqtHLn0ieH/HoubfXSp27YicmvMlWqZDHepKq0SsIMQbpubcnttzFcmCCjFLEEexID1g1ZiVBRmA9d3dHlsNIDkSQEYUogl32AarGrCLMiEzP3V1lZXJEOV9MmBG1cjMV6ruhauxqgozY9dzZGTifgb+gauwawoyK6bmzI1BGA40chBmVFjRzJae/atxawgwxPbe3l5TVkh5UTZihwOMSQj3sA6rHrSPMUOPx7W1DZrasbTtAmyHTXj1+Pd0Z6jy+tbVobov+RfX4DYQZaj2+taVgdguOHIQZ2hXLaKrgo63YfzgAyjKoQ1dP2Eh3hhMKZbVAh6Y7w11PdejqCZvoznDKs5l9ukMzO8Nx/QkeOfEzujOc9ejmV9YY3imEZwaMHIwbcJ81xpiRkz5n3IDzHv31pe3t0HRn+IEZGl7Jd2i26+AJRg54xY6c/AU3hPBGiu4Mn6TIM3ySsiQaHmHbDl5JsWUHn9Ch4RV2OeAVAg2vsG0Hr9Ch4RVuCuGVEfkOzYp7PbzxqXgNSVgjFNTg/Xp4Y5MxpvdXBfX4vGzNlK/5tF2Mctc3Dvqz9NTNApUkg62ZsplAxyB3fcOwj0lP3VKBSpKFkSOGVUqYjel9nIJ6fVrcFEa8cm2lhblP/vHydfuy2LaLUK5tfUW/DoPZmqlbmaHLlGtbF9mx0tO2RXasJGKGLnNFGWZjeo+n4Hm5upihy1i5a9GGuU/+uPLPz8VFoEOu3LW1Jk7548s/T9eWrZm+nRk6gNzVNRU9X7phR0XP5zpbM30HgS5R7upqsXOnG3aKndslbNuVSDLMGs7vCpuevpMOPYzuq6ukS+iXadglXYJqNt1AoIvpbtUT5IEyjYS6GJtu2EWgC+huXSldwrAyjbulS1CHbbsCy4UwG9P3TSf/emla3BQ+o7t1hXQJgbhWb9xsunEPI4cxpvvKcukSypKZsVe6BBXo0Mb9MBvjx3OIgk037k10h+6+8ol0CZHLzNgnXYKYRH/azscwG9P7vBS8vhLLpmfsS1yH7r78sXQJFZFp2i9dQsUlboZOSpiNSdZz7WMzM/YnpkN3Xf5IugQR2aYD0iVUjM00HUhEoLsufShdgrjszIPSJcQuESMHYc5LwutgM00Hve3QXZeWSZegUnbmIekSYuPtth1hLq7r0jLx6xPbtl1m5iHvOnTXxQ+kS3BGtvmwdAmR8m6GJszB+PZ62czMw1506K6L70uX4LRs8xHpEiJhM81HnA90V8t70iV4ITvrqHQJZXN+5CDM0fHhtbSZ5qPOduiulqXSJXgrO+sb6RJCsVkHA91JkCui1sFQjzDWGpcWYa6czpal4tc76HJqhu688K50CYnj2mtus7O+dWLk6LzwjnQJiVc7+5h0CcOy2dnHVAe68/zb0iVggNo530mXMCTVIwdh1kf7NVH7g2a0v3BJlr828hkptFR26M7zb0mXgGFovUY2O+d7NTN0569LpEtACLVzj0uX0E9NhybM7tJ07VTM0JpeEISTv4byWbK1c38QHTkenFsseXpEbNS8E6LnFws0QfabVLBFRg7C7L/8NU7Att2Dc4sqfUoIkbjWtnbeSTXbds968MtC6RJQwKhXT0mXUJSabTsgCqn87AEEoTczdGh4JWWs3u82KKU4M4wcCEFvZhg54BVGDgSnODMpvaVBK82ZYYZGCHozk5IuwGUvLPknluP+e/zFWI6bBMzQCE5xZhg5EILezLBtB68wciA4xZmhQ8MrzNAIQW9m6NDwCjM0glOcmZRV/M8HdNKcGUYOeIWbQoSgNzMpxbVBK8WZoUMjBL2ZYYaGV9i2Q3CKM8PIgRD0ZoaRA16hQyMEvZlh2w7BKc4Mb30jMM2ZYYaGV9i2Q3CKM0OHhlfY5UAIejNDoBGC3sywbYfgFGeGDo0Q9GaGm0J4hQ6NEPRmhhkawSnODG99IzDNmWHkQAh6M8PIgeAUZ4YOjRD0ZoZtO3iFDo0Q9GbGPvdayxPpIoCo0KHhFQINr7BtB6/QoeEVtu3gFT7LAa8wQ8Mr1hhjnn+9lb1oOO/+z402lf8tbRp+4KYQXsl3aMU/CQcIgg4Nr/S35uffaOPGEM66/9M0a0zfyGEM94Xwwv+BJtHwQP8Mff/HqSQaThqY3dTAv+BtcLhuUILr5v/GzSGc0XH2lacyzLYdvFJwxqib/ztdGup1nH15UH5ThR7IKA1XFY1u3YI/6NJQq+PMSwWzW3SGLvYFgLShsjlsaOsW/EmnhhodZyYPmdnCM/RAfBIPDhl2267j9CQSDRVKyWLJYa178yajB8R0nJ5YUlYDdd96Qg0B7SWG2ZgQO871C/8m1KiY9lMTAmU08FvfQU8AhBUma2WFs37hLbo1Itd+anzoXJbdbesX3SbUiEz7yXFlZbLsT9uVWwDQJ4osRRrG+kV36NYIrP3k2MhyGEt3JdgoRZRB7hPruFC/+C7BxiDtJ8bElruKzb+EO9niDPFAojd09YvvEXIPtZ8YLZar/wA+f5ywciMLGgAAAABJRU5ErkJggg==">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&family=Sarabun:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<style>
+:root{--bg:#f0f6ff;--card:#fff;--border:#c8daf5;--text:#0d1f3c;--text2:#2a4a7f;--accent:#1a5fd4;--grad1:#0a2d6e;--grad2:#1a5fd4;--green:#188a4f;--red:#c2412f;--amber:#b97a10}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+body{font-family:'Sarabun',sans-serif;background:var(--bg);color:var(--text);padding-bottom:30px}
+.topbar{background:linear-gradient(135deg,var(--grad1),var(--grad2));color:#fff;padding:calc(14px + env(safe-area-inset-top)) 16px 12px;position:relative}
+.topbar h1{font-family:'Prompt';font-size:1.15rem;font-weight:600}
+.topbar .sub{font-size:.75rem;opacity:.85;margin-top:2px}
+.sync-chip{position:absolute;top:calc(14px + env(safe-area-inset-top));right:14px;font-size:.68rem;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.35);padding:3px 9px;border-radius:20px;display:flex;align-items:center;gap:5px}
+.sync-chip .dot{width:7px;height:7px;border-radius:50%;background:#ffc94d;display:inline-block}
+.sync-chip.on .dot{background:#4ede8c}
+.sync-chip.off .dot{background:#ff7b6b}
+.tabs{display:flex;background:#fff;border-bottom:2px solid var(--border);position:sticky;top:0;z-index:50;overflow-x:auto}
+.tab{flex:1;min-width:64px;text-align:center;padding:9px 2px 7px;font-size:.72rem;color:var(--text2);border-bottom:3px solid transparent;cursor:pointer;font-family:'Prompt';white-space:nowrap}
+.tab .ico{font-size:1.05rem;display:block;margin-bottom:1px}
+.tab.active{color:var(--accent);border-bottom-color:var(--accent);font-weight:600}
+.tab .cnt{display:inline-block;background:var(--red);color:#fff;font-size:.6rem;border-radius:12px;padding:0 5px;margin-left:2px;vertical-align:top}
+.container{max-width:640px;margin:0 auto;padding:12px}
+.panel{display:none}
+.panel.active{display:block}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:12px;box-shadow:0 1px 4px rgba(10,45,110,.06)}
+.card h2{font-family:'Prompt';font-size:.95rem;color:var(--grad1);margin-bottom:10px}
+.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px}
+.stat{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 6px;text-align:center}
+.stat .num{font-family:'Prompt';font-weight:700;font-size:1.05rem;color:var(--grad1)}
+.stat .lbl{font-size:.68rem;color:var(--text2);margin-top:2px}
+.fld{display:block;margin-bottom:9px;font-size:.78rem;color:var(--text2);font-weight:600}
+.fld input,.fld select{width:100%;margin-top:4px;padding:10px;border:1px solid var(--border);border-radius:10px;font-family:'Sarabun';font-size:.95rem;background:#fbfdff;color:var(--text)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.btn-primary{width:100%;background:linear-gradient(135deg,var(--grad1),var(--grad2));color:#fff;border:none;border-radius:10px;padding:12px;font-family:'Prompt';font-weight:600;font-size:.95rem;cursor:pointer;margin-top:4px}
+.btn-primary:active{background:var(--grad1)}
+.btn-ghost{background:#eaf2ff;color:var(--accent);border:1px solid var(--border);border-radius:9px;padding:7px 12px;font-family:'Prompt';font-size:.78rem;cursor:pointer}
+.btn-danger{background:#fdecec;color:var(--red);border:1px solid #f3c4c4;border-radius:8px;padding:4px 10px;font-size:.72rem;cursor:pointer}
+.btn-pay{background:#e8f7ee;color:var(--green);border:1px solid #bde5cc;border-radius:8px;padding:4px 10px;font-size:.72rem;cursor:pointer;font-weight:600}
+.btn-pay.paid{background:var(--green);color:#fff;border-color:var(--green)}
+.list-item{display:flex;align-items:center;gap:10px;padding:10px 2px;border-bottom:1px solid #e7f0fd}
+.list-item:last-child{border-bottom:none}
+.list-item .info{flex:1;min-width:0}
+.list-item .ttl{font-weight:600;font-size:.9rem}
+.list-item .meta{font-size:.74rem;color:var(--text2);margin-top:1px}
+.list-item .amt{font-family:'Prompt';font-weight:600;color:var(--grad1);white-space:nowrap}
+.badge{font-size:.66rem;padding:2px 8px;border-radius:20px;background:#eaf2ff;color:var(--accent);font-weight:600;white-space:nowrap}
+.badge.red{background:#fdecec;color:var(--red)}
+.badge.amber{background:#fdf3e0;color:var(--amber)}
+.badge.green{background:#e8f7ee;color:var(--green)}
+.month-head{font-family:'Prompt';font-weight:600;color:var(--grad1);font-size:.88rem;padding:10px 2px 6px;border-bottom:2px solid var(--border);display:flex;justify-content:space-between}
+.empty{text-align:center;color:var(--text2);font-size:.84rem;padding:18px 6px}
+.hint{font-size:.76rem;color:var(--text2);background:#eaf2ff;border:1px dashed var(--border);border-radius:10px;padding:10px;line-height:1.55}
+.form-row{display:flex;gap:8px;margin-bottom:8px;flex-wrap:wrap}
+.form-row input{flex:1;padding:10px;border:1px solid var(--border);border-radius:10px;font-family:'Sarabun';background:#fbfdff;min-width:0}
+.qr-card{background:#fff;border:2px solid var(--grad1);border-radius:16px;padding:18px;text-align:center;margin-bottom:12px}
+.qr-card h3{font-family:'Prompt';color:var(--grad1)}
+.qr-card .sub{font-size:.76rem;color:var(--text2);margin:6px 0 10px}
+#qrbox{display:flex;justify-content:center;padding:8px}
+/* ===== Alert popup ===== */
+.overlay{position:fixed;inset:0;background:rgba(10,25,60,.55);display:none;align-items:flex-end;justify-content:center;z-index:200}
+.overlay.show{display:flex}
+.sheet{background:#fff;width:100%;max-width:640px;border-radius:20px 20px 0 0;max-height:82vh;display:flex;flex-direction:column;animation:up .25s ease}
+@keyframes up{from{transform:translateY(40px);opacity:.4}to{transform:none;opacity:1}}
+.sheet-head{background:linear-gradient(135deg,var(--grad1),var(--grad2));color:#fff;border-radius:20px 20px 0 0;padding:14px 16px;font-family:'Prompt';font-weight:600;display:flex;justify-content:space-between;align-items:center}
+.sheet-body{overflow-y:auto;padding:8px 14px}
+.al-group{font-family:'Prompt';font-size:.8rem;color:var(--text2);font-weight:600;padding:10px 2px 4px}
+.al-item{display:flex;align-items:center;gap:10px;background:#fbfdff;border:1px solid var(--border);border-radius:12px;padding:10px;margin-bottom:8px}
+.al-item.late{border-color:#f3c4c4;background:#fff8f7}
+.al-item .info{flex:1;min-width:0}
+.al-item .ttl{font-weight:600;font-size:.88rem}
+.al-item .meta{font-size:.74rem;color:var(--text2)}
+.btn-clear{background:#e8f7ee;color:var(--green);border:1px solid #bde5cc;border-radius:9px;padding:7px 11px;font-family:'Prompt';font-size:.76rem;font-weight:600;cursor:pointer;white-space:nowrap}
+.sheet-foot{display:flex;gap:8px;padding:10px 14px calc(12px + env(safe-area-inset-bottom));border-top:1px solid var(--border)}
+.sheet-foot button{flex:1;border-radius:10px;padding:11px;font-family:'Prompt';font-weight:600;font-size:.85rem;cursor:pointer}
+.btn-later{background:#eaf2ff;color:var(--text2);border:1px solid var(--border)}
+.btn-clearall{background:linear-gradient(135deg,var(--grad1),var(--grad2));color:#fff;border:none}
+@media print{.topbar,.tabs,.panel,.overlay{display:none!important}#panel-qr{display:block!important}.card,.hint{display:none}.qr-card{border-width:3px}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <h1>🏠 Family Hub — บ้านเรา</h1>
+  <div class="sub">รายจ่ายประจำ · นัดหมาย · กิจกรรมลูก · ค่าน้ำมัน</div>
+  <div class="sync-chip" id="sync-chip"><span class="dot"></span><span id="sync-text">กำลังเชื่อมต่อ…</span></div>
+</div>
+
+<div class="tabs">
+  <div class="tab active" data-tab="home"><span class="ico">🏠</span>หน้าหลัก<span class="cnt" id="tab-alert-cnt" style="display:none">0</span></div>
+  <div class="tab" data-tab="ex"><span class="ico">💸</span>รายจ่าย</div>
+  <div class="tab" data-tab="ev"><span class="ico">📅</span>นัดหมาย</div>
+  <div class="tab" data-tab="fuel"><span class="ico">⛽</span>น้ำมัน</div>
+  <div class="tab" data-tab="qr"><span class="ico">🔳</span>QR</div>
+</div>
+
+<div class="container">
+
+<!-- ================= HOME ================= -->
+<div class="panel active" id="panel-home">
+  <div class="stat-grid">
+    <div class="stat"><div class="num" id="st-unpaid">฿0</div><div class="lbl">ค้างจ่ายเดือนนี้</div></div>
+    <div class="stat"><div class="num" id="st-events">0</div><div class="lbl">นัดใน 7 วัน</div></div>
+    <div class="stat"><div class="num" id="st-fuel">฿0</div><div class="lbl">น้ำมันเดือนนี้</div></div>
+  </div>
+  <div class="card" id="alert-summary" style="display:none">
+    <h2>🔔 แจ้งเตือนค้างเคลียร์ <span class="badge red" id="alert-cnt-badge">0</span></h2>
+    <button class="btn-primary" onclick="openAlertSheet(true)">เปิดดูแจ้งเตือน</button>
+  </div>
+  <div class="card">
+    <h2>📅 นัดหมาย 7 วันข้างหน้า</h2>
+    <div id="home-events"></div>
+  </div>
+  <div class="card">
+    <h2>💸 ค้างจ่ายเดือนนี้</h2>
+    <div id="home-unpaid"></div>
+  </div>
+</div>
+
+<!-- ================= EXPENSES ================= -->
+<div class="panel" id="panel-ex">
+  <div class="card">
+    <h2>➕ เพิ่มรายจ่ายประจำเดือน</h2>
+    <label class="fld">ชื่อรายการ<input id="ex-name" placeholder="เช่น ค่าไฟ / ค่าผ่อนบ้าน"></label>
+    <div class="row2">
+      <label class="fld">จำนวนเงิน (บาท)<input id="ex-amount" type="number" inputmode="decimal" placeholder="0"></label>
+      <label class="fld">ครบกำหนดทุกวันที่<input id="ex-day" type="number" inputmode="numeric" min="1" max="31" placeholder="เช่น 5"></label>
+    </div>
+    <label class="fld">หมวด<select id="ex-cat"><option>บ้าน</option><option>รถ</option><option>ลูก</option><option>สาธารณูปโภค</option><option>อื่นๆ</option></select></label>
+    <button class="btn-primary" onclick="addExpense()">💾 บันทึกรายการ</button>
+  </div>
+  <div class="card">
+    <h2>📋 รายจ่ายประจำ — เดือนนี้</h2>
+    <div id="ex-list"></div>
+  </div>
+</div>
+
+<!-- ================= EVENTS ================= -->
+<div class="panel" id="panel-ev">
+  <div class="card">
+    <h2>➕ เพิ่มนัดหมาย / กิจกรรม</h2>
+    <label class="fld">ชื่อนัด/กิจกรรม<input id="ev-name" placeholder="เช่น นัดหมอฟัน / เรียนเปียโน"></label>
+    <div class="row2">
+      <label class="fld">วันที่<input id="ev-date" type="date"></label>
+      <label class="fld">เวลา<input id="ev-time" type="time"></label>
+    </div>
+    <div class="row2">
+      <label class="fld">ประเภท<select id="ev-type"><option>นัดหมอ</option><option>กิจกรรมลูก</option><option>โรงเรียน</option><option>ธุระ</option><option>อื่นๆ</option></select></label>
+      <label class="fld">ของใคร<select id="ev-who"><option>ทั้งบ้าน</option><option>พ่อ</option><option>แม่</option><option>ลูก</option></select></label>
+    </div>
+    <label class="fld">ทำซ้ำ<select id="ev-repeat"><option value="">ครั้งเดียว</option><option value="weekly">ทุกสัปดาห์ (เช่น เรียนเปียโน)</option></select></label>
+    <label class="fld">หมายเหตุ<input id="ev-note" placeholder="เช่น รพ.กรุงเทพระยอง ชั้น 3"></label>
+    <button class="btn-primary" onclick="addEvent()">💾 บันทึกนัดหมาย</button>
+  </div>
+  <div class="card">
+    <h2>📅 นัดหมายทั้งหมด</h2>
+    <div id="ev-list"></div>
+  </div>
+</div>
+
+<!-- ================= FUEL ================= -->
+<div class="panel" id="panel-fuel">
+  <div class="stat-grid">
+    <div class="stat"><div class="num" id="fu-month">฿0</div><div class="lbl">เดือนนี้</div></div>
+    <div class="stat"><div class="num" id="fu-count">0</div><div class="lbl">ครั้ง/เดือนนี้</div></div>
+    <div class="stat"><div class="num" id="fu-avg">฿0</div><div class="lbl">เฉลี่ย/ครั้ง</div></div>
+  </div>
+  <div class="card">
+    <h2>➕ เติมน้ำมัน</h2>
+    <label class="fld">จำนวนเงิน (บาท)<input id="fu-amount" type="number" inputmode="decimal" placeholder="0"></label>
+    <div class="row2">
+      <label class="fld">วันที่<input id="fu-date" type="date"></label>
+      <label class="fld">ใครเติม<select id="fu-who"><option>พ่อ</option><option>แม่</option></select></label>
+    </div>
+    <label class="fld">หมายเหตุ (ปั๊ม/รถ ไม่ใส่ก็ได้)<input id="fu-note" placeholder="เช่น ปตท. เต็มถัง"></label>
+    <button class="btn-primary" onclick="addFuel()">💾 บันทึก</button>
+  </div>
+  <div class="card">
+    <h2>📑 ประวัติการเติม</h2>
+    <div id="fu-list"></div>
+  </div>
+</div>
+
+<!-- ================= QR ================= -->
+<div class="panel" id="panel-qr">
+  <div class="card">
+    <h2>🔳 สร้าง QR Code ให้ครอบครัว</h2>
+    <div class="form-row">
+      <input id="qr-url" placeholder="วางลิงก์หน้านี้">
+      <button class="btn-ghost" onclick="makeQR()">สร้าง QR</button>
+    </div>
+    <div class="form-row">
+      <button class="btn-ghost" onclick="useCurrentURL()">ใช้ลิงก์หน้านี้</button>
+      <button class="btn-ghost" onclick="window.print()">🖨️ พิมพ์การ์ด QR</button>
+      <button class="btn-ghost" onclick="exportData()">📤 Backup</button>
+      <button class="btn-ghost" onclick="document.getElementById('imp-file').click()">📥 Restore</button>
+      <input type="file" id="imp-file" accept=".json" style="display:none" onchange="importData(event)">
+    </div>
+  </div>
+  <div class="qr-card" id="qr-print-card">
+    <h3>🏠 Family Hub บ้านเรา</h3>
+    <div class="sub">สแกนเพื่อดู/บันทึก รายจ่าย · นัดหมาย · น้ำมัน</div>
+    <div id="qrbox"><span style="color:#2a4a7f;font-size:.85rem">ใส่ลิงก์แล้วกด "สร้าง QR"</span></div>
+    <div class="sub" id="qr-url-label"></div>
+  </div>
+  <div class="hint">💡 <b>ติดตั้งเป็นแอป:</b> Android — เมนู Chrome ⋮ → "เพิ่มลงในหน้าจอหลัก" / iPhone — ปุ่ม Share → "Add to Home Screen"<br>🔔 แจ้งเตือนจะเด้งทุกครั้งที่เปิดแอป จนกว่าจะกด "เคลียร์"</div>
+</div>
+
+</div><!-- /container -->
+
+<!-- ================= ALERT SHEET ================= -->
+<div class="overlay" id="alert-overlay">
+  <div class="sheet">
+    <div class="sheet-head"><span>🔔 แจ้งเตือนวันนี้</span><span class="badge" style="background:rgba(255,255,255,.2);color:#fff" id="sheet-cnt">0 รายการ</span></div>
+    <div class="sheet-body" id="sheet-body"></div>
+    <div class="sheet-foot">
+      <button class="btn-later" onclick="closeAlertSheet()">ปิดไว้ก่อน (เด้งอีกครั้งหน้า)</button>
+      <button class="btn-clearall" onclick="clearAllAlerts()">✓ เคลียร์ทั้งหมด</button>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ================================================================
+   🔥 FIREBASE — โปรเจกต์เดิม family---hup (ข้อมูลเก่าขึ้นครบทันที)
+================================================================ */
+const firebaseConfig = {
+  apiKey: "AIzaSyCszvZXe1VJcZzQmWWRrkLs1YGhbzvuxxA",
+  authDomain: "family---hup.firebaseapp.com",
+  databaseURL: "https://family---hup-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "family---hup",
+  storageBucket: "family---hup.firebasestorage.app",
+  messagingSenderId: "1074541803511",
+  appId: "1:1074541803511:web:8b7caa3d4e56117b56e0f2"
+};
+const FAMILY_CODE = "baan-aiew-2026";
+/* การแจ้งเตือน: นัดหมายล่วงหน้ากี่วัน / รายจ่ายล่วงหน้ากี่วัน */
+const EVENT_LEAD_DAYS = 3, EXPENSE_LEAD_DAYS = 5;
+/* ================================================================ */
+
+/* ล้าง service worker + cache เก่า กันปัญหาแอปค้างเวอร์ชันเดิม */
+if('serviceWorker' in navigator){navigator.serviceWorker.getRegistrations().then(rs=>rs.forEach(r=>r.unregister())).catch(()=>{});}
+if(window.caches){caches.keys().then(ks=>ks.forEach(k=>caches.delete(k))).catch(()=>{});}
+
+const KEY='family_hub_v1', FKEY='money_pad_fuel_v1';
+const toArr=v=>Array.isArray(v)?v.filter(x=>x!=null):(v&&typeof v==='object'?Object.values(v):[]);
+let db=JSON.parse(localStorage.getItem(KEY)||'{"expenses":[],"events":[]}');
+db.expenses=toArr(db.expenses);db.events=toArr(db.events);db.alertCleared=db.alertCleared||{};
+db.expenses.forEach(e=>e.paid=e.paid||{});
+let fuel=toArr(JSON.parse(localStorage.getItem(FKEY)||'[]'));
+
+const thMonths=['ม.ค.','ก.พ.','มี.ค.','เม.ย.','พ.ค.','มิ.ย.','ก.ค.','ส.ค.','ก.ย.','ต.ค.','พ.ย.','ธ.ค.'];
+const thDays=['อา.','จ.','อ.','พ.','พฤ.','ศ.','ส.'];
+const monthKey=()=>{const d=new Date();return d.getFullYear()+'-'+(d.getMonth()+1)};
+const fmtBaht=n=>'฿'+Number(n||0).toLocaleString('th-TH');
+const iso=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+const todayISO=()=>iso(new Date());
+const fmtDate=s=>{const d=new Date(s+'T00:00');return thDays[d.getDay()]+' '+d.getDate()+' '+thMonths[d.getMonth()]+' '+(d.getFullYear()+543)};
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+/* ---------- Firebase sync ---------- */
+let hubRef=null,fuelRef=null,hubLoaded=false;
+function setSync(state,text){const c=document.getElementById('sync-chip');c.className='sync-chip '+state;document.getElementById('sync-text').textContent=text;}
+function saveHub(){
+  localStorage.setItem(KEY,JSON.stringify(db));
+  if(hubRef)hubRef.set({expenses:db.expenses,events:db.events,alertCleared:db.alertCleared}).catch(e=>alert('บันทึกไม่สำเร็จ: '+e.message));
+}
+function saveFuel(){
+  localStorage.setItem(FKEY,JSON.stringify(fuel));
+  if(fuelRef)fuelRef.set(fuel).catch(e=>alert('บันทึกไม่สำเร็จ: '+e.message));
+}
+try{
+  firebase.initializeApp(firebaseConfig);
+  hubRef=firebase.database().ref('families/'+FAMILY_CODE);
+  fuelRef=firebase.database().ref('moneypad/'+FAMILY_CODE+'/fuel');
+  hubRef.on('value',snap=>{
+    const r=snap.val();
+    if(r){
+      db={expenses:toArr(r.expenses),events:toArr(r.events),alertCleared:r.alertCleared||{}};
+      db.expenses.forEach(e=>e.paid=e.paid||{});
+      localStorage.setItem(KEY,JSON.stringify(db));
+      render();
+    }else if(db.expenses.length||db.events.length){saveHub();}
+    if(!hubLoaded){hubLoaded=true;maybeShowAlerts();}
+  },e=>{setSync('off','อ่านข้อมูลไม่ได้');});
+  fuelRef.on('value',snap=>{
+    const r=snap.val();
+    if(r){fuel=toArr(r);localStorage.setItem(FKEY,JSON.stringify(fuel));render();}
+    else if(fuel.length){saveFuel();}
+  });
+  firebase.database().ref('.info/connected').on('value',s=>{
+    setSync(s.val()?'on':'off', s.val()?'🟢 ซิงค์ทั้งบ้าน':'ออฟไลน์ (จะซิงค์เมื่อออนไลน์)');
+  });
+}catch(e){setSync('off','โหมดเครื่องนี้เท่านั้น');}
+
+/* ---------- Tabs ---------- */
+document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
+  document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+  document.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));
+  t.classList.add('active');
+  document.getElementById('panel-'+t.dataset.tab).classList.add('active');
+});
+
+/* ---------- Occurrence helper (weekly repeat) ---------- */
+function nextOccurrence(ev){
+  if(ev.repeat!=='weekly')return ev.date;
+  const wd=new Date(ev.date+'T00:00').getDay(),now=new Date();
+  for(let i=0;i<7;i++){const t=new Date(now.getFullYear(),now.getMonth(),now.getDate()+i);if(t.getDay()===wd)return iso(t);}
+  return ev.date;
+}
+function daysFromToday(dateStr){
+  const t=new Date();const a=new Date(t.getFullYear(),t.getMonth(),t.getDate());
+  const b=new Date(dateStr+'T00:00');
+  return Math.round((b-a)/86400000);
+}
+
+/* ---------- Alerts ---------- */
+function computeAlerts(){
+  const items=[],mk=monthKey(),todayD=new Date().getDate();
+  db.events.forEach(ev=>{
+    const occ=nextOccurrence(ev),diff=daysFromToday(occ);
+    if(diff>=0&&diff<=EVENT_LEAD_DAYS){
+      const key='ev_'+ev.id+'_'+occ;
+      if(!db.alertCleared[key])items.push({key,group:'📅 นัดหมายใกล้ถึง',late:false,
+        ttl:ev.name,meta:fmtDate(occ)+(ev.time?' '+ev.time+' น.':'')+(ev.who?' · '+ev.who:'')+(diff===0?' · วันนี้!':diff===1?' · พรุ่งนี้':' · อีก '+diff+' วัน')});
+    }
+  });
+  db.expenses.forEach(e=>{
+    if(e.paid&&e.paid[mk])return;
+    const due=Number(e.day)||1,diff=due-todayD;
+    if(diff<=EXPENSE_LEAD_DAYS){
+      const key='ex_'+e.id+'_'+mk;
+      if(!db.alertCleared[key])items.push({key,group:'💸 ค่าใช้จ่ายยังไม่จ่าย',late:diff<0,
+        ttl:e.name+' '+fmtBaht(e.amount),meta:'ครบกำหนดวันที่ '+due+(diff<0?' · ⚠️ เลยกำหนด '+(-diff)+' วัน':diff===0?' · วันนี้!':' · อีก '+diff+' วัน')});
+    }
+  });
+  return items;
+}
+function renderAlertSheet(items){
+  const body=document.getElementById('sheet-body');
+  document.getElementById('sheet-cnt').textContent=items.length+' รายการ';
+  let h='',lastG='';
+  items.forEach(it=>{
+    if(it.group!==lastG){h+='<div class="al-group">'+it.group+'</div>';lastG=it.group;}
+    h+='<div class="al-item'+(it.late?' late':'')+'"><div class="info"><div class="ttl">'+esc(it.ttl)+'</div><div class="meta">'+esc(it.meta)+'</div></div><button class="btn-clear" onclick="clearAlert(\''+it.key+'\')">✓ เคลียร์</button></div>';
+  });
+  body.innerHTML=h||'<div class="empty">🎉 ไม่มีแจ้งเตือนค้างแล้ว</div>';
+}
+function updateAlertBadges(){
+  const n=computeAlerts().length;
+  const tb=document.getElementById('tab-alert-cnt');
+  tb.style.display=n?'inline-block':'none';tb.textContent=n;
+  document.getElementById('alert-summary').style.display=n?'block':'none';
+  document.getElementById('alert-cnt-badge').textContent=n+' รายการ';
+}
+let alertShownThisLoad=false;
+function maybeShowAlerts(){
+  if(alertShownThisLoad)return;
+  const items=computeAlerts();
+  if(items.length){alertShownThisLoad=true;openAlertSheet();}
+}
+function openAlertSheet(force){
+  const items=computeAlerts();
+  if(!items.length&&!force)return;
+  renderAlertSheet(items);
+  document.getElementById('alert-overlay').classList.add('show');
+}
+function closeAlertSheet(){document.getElementById('alert-overlay').classList.remove('show');}
+function clearAlert(key){
+  db.alertCleared[key]=true;pruneCleared();saveHub();
+  const items=computeAlerts();
+  if(items.length)renderAlertSheet(items);else{renderAlertSheet([]);setTimeout(closeAlertSheet,500);}
+  updateAlertBadges();
+}
+function clearAllAlerts(){
+  computeAlerts().forEach(it=>db.alertCleared[it.key]=true);
+  pruneCleared();saveHub();closeAlertSheet();updateAlertBadges();
+}
+/* ลบ key เคลียร์เก่าๆ ทิ้ง กันข้อมูลบวมสะสม */
+function pruneCleared(){
+  const mk=monthKey(),today=todayISO();
+  Object.keys(db.alertCleared).forEach(k=>{
+    const p=k.split('_');
+    if(p[0]==='ex'&&p[2]!==mk)delete db.alertCleared[k];
+    if(p[0]==='ev'&&p[2]<today&&daysFromToday(p[2])<-14)delete db.alertCleared[k];
+  });
+}
+
+/* ---------- Expenses ---------- */
+function addExpense(){
+  const name=document.getElementById('ex-name').value.trim();
+  const amount=parseFloat(document.getElementById('ex-amount').value)||0;
+  const day=parseInt(document.getElementById('ex-day').value)||1;
+  const cat=document.getElementById('ex-cat').value;
+  if(!name){alert('ใส่ชื่อรายการก่อนนะครับ');return}
+  db.expenses.push({id:Date.now(),name,amount,day,cat,paid:{}});
+  saveHub();render();
+  document.getElementById('ex-name').value='';document.getElementById('ex-amount').value='';document.getElementById('ex-day').value='';
+}
+function togglePaid(id){
+  const e=db.expenses.find(x=>x.id===id);if(!e)return;
+  e.paid=e.paid||{};const mk=monthKey();
+  e.paid[mk]=!e.paid[mk];
+  saveHub();render();
+}
+function delExpense(id){if(confirm('ลบรายการนี้?')){db.expenses=db.expenses.filter(x=>x.id!==id);saveHub();render()}}
+
+/* ---------- Events ---------- */
+function addEvent(){
+  const name=document.getElementById('ev-name').value.trim();
+  const date=document.getElementById('ev-date').value;
+  if(!name||!date){alert('ใส่ชื่อและวันที่ก่อนนะครับ');return}
+  db.events.push({
+    id:Date.now(),name,date,
+    type:document.getElementById('ev-type').value,
+    time:document.getElementById('ev-time').value,
+    who:document.getElementById('ev-who').value,
+    repeat:document.getElementById('ev-repeat').value,
+    note:document.getElementById('ev-note').value.trim()
+  });
+  saveHub();render();
+  document.getElementById('ev-name').value='';document.getElementById('ev-note').value='';
+}
+function delEvent(id){if(confirm('ลบนัดหมายนี้?')){db.events=db.events.filter(x=>x.id!==id);saveHub();render()}}
+
+/* ---------- Fuel ---------- */
+function addFuel(){
+  const amount=parseFloat(document.getElementById('fu-amount').value)||0;
+  if(!amount){alert('ใส่จำนวนเงินก่อนนะครับ');return}
+  const date=document.getElementById('fu-date').value||todayISO();
+  fuel.push({id:Date.now(),date,amount,who:document.getElementById('fu-who').value,note:document.getElementById('fu-note').value.trim()});
+  saveFuel();render();
+  document.getElementById('fu-amount').value='';document.getElementById('fu-note').value='';
+  document.getElementById('fu-date').value=todayISO();
+}
+function delFuel(id){if(confirm('ลบรายการนี้?')){fuel=fuel.filter(x=>x.id!==id);saveFuel();render()}}
+
+/* ---------- Render ---------- */
+function render(){
+  const mk=monthKey(),today=todayISO();
+  /* — expenses list — */
+  let h='';
+  db.expenses.slice().sort((a,b)=>(a.day||0)-(b.day||0)).forEach(e=>{
+    const paid=e.paid&&e.paid[mk];
+    h+='<div class="list-item"><div class="info"><div class="ttl">'+esc(e.name)+' <span class="badge">'+esc(e.cat||'')+'</span></div><div class="meta">ครบกำหนดทุกวันที่ '+esc(e.day)+'</div></div><div class="amt">'+fmtBaht(e.amount)+'</div><button class="btn-pay'+(paid?' paid':'')+'" onclick="togglePaid('+e.id+')">'+(paid?'✓ จ่ายแล้ว':'ยังไม่จ่าย')+'</button><button class="btn-danger" onclick="delExpense('+e.id+')">ลบ</button></div>';
+  });
+  document.getElementById('ex-list').innerHTML=h||'<div class="empty">ยังไม่มีรายการ — เพิ่มด้านบนได้เลย</div>';
+
+  /* — events list — */
+  h='';
+  db.events.slice().sort((a,b)=>nextOccurrence(a).localeCompare(nextOccurrence(b))).forEach(ev=>{
+    const occ=nextOccurrence(ev),past=ev.repeat!=='weekly'&&occ<today;
+    h+='<div class="list-item"'+(past?' style="opacity:.55"':'')+'><div class="info"><div class="ttl">'+esc(ev.name)+' <span class="badge">'+esc(ev.type||'')+'</span>'+(ev.repeat==='weekly'?' <span class="badge green">ทุกสัปดาห์</span>':'')+'</div><div class="meta">'+fmtDate(occ)+(ev.time?' '+esc(ev.time)+' น.':'')+(ev.who?' · '+esc(ev.who):'')+(ev.note?' · '+esc(ev.note):'')+'</div></div><button class="btn-danger" onclick="delEvent('+ev.id+')">ลบ</button></div>';
+  });
+  document.getElementById('ev-list').innerHTML=h||'<div class="empty">ยังไม่มีนัดหมาย</div>';
+
+  /* — fuel — */
+  const monthRecs=fuel.filter(r=>{const d=new Date(r.date+'T00:00');return d.getFullYear()+'-'+(d.getMonth()+1)===mk});
+  const mTotal=monthRecs.reduce((s,r)=>s+Number(r.amount||0),0);
+  document.getElementById('fu-month').textContent=fmtBaht(mTotal);
+  document.getElementById('fu-count').textContent=monthRecs.length;
+  document.getElementById('fu-avg').textContent=fmtBaht(monthRecs.length?Math.round(mTotal/monthRecs.length):0);
+  h='';let lastM='';
+  fuel.slice().sort((a,b)=>String(b.date).localeCompare(String(a.date))).forEach(r=>{
+    const d=new Date(r.date+'T00:00');const m=thMonths[d.getMonth()]+' '+(d.getFullYear()+543);
+    if(m!==lastM){
+      const mkR=d.getFullYear()+'-'+(d.getMonth()+1);
+      const tot=fuel.filter(x=>{const xd=new Date(x.date+'T00:00');return xd.getFullYear()+'-'+(xd.getMonth()+1)===mkR}).reduce((s,x)=>s+Number(x.amount||0),0);
+      h+='<div class="month-head"><span>'+m+'</span><span>'+fmtBaht(tot)+'</span></div>';lastM=m;
+    }
+    h+='<div class="list-item"><div class="info"><div class="ttl">'+fmtDate(r.date)+'</div><div class="meta">'+esc(r.who||'')+(r.note?' · '+esc(r.note):'')+'</div></div><div class="amt">'+fmtBaht(r.amount)+'</div><button class="btn-danger" onclick="delFuel('+r.id+')">ลบ</button></div>';
+  });
+  document.getElementById('fu-list').innerHTML=h||'<div class="empty">ยังไม่มีรายการ</div>';
+
+  /* — home — */
+  const unpaid=db.expenses.filter(e=>!(e.paid&&e.paid[mk]));
+  document.getElementById('st-unpaid').textContent=fmtBaht(unpaid.reduce((s,e)=>s+Number(e.amount||0),0));
+  document.getElementById('st-fuel').textContent=fmtBaht(mTotal);
+  const upcoming=db.events.map(ev=>({ev,occ:nextOccurrence(ev)})).filter(x=>{const d=daysFromToday(x.occ);return d>=0&&d<=7}).sort((a,b)=>a.occ.localeCompare(b.occ));
+  document.getElementById('st-events').textContent=upcoming.length;
+  h='';
+  upcoming.forEach(({ev,occ})=>{
+    const d=daysFromToday(occ);
+    h+='<div class="list-item"><div class="info"><div class="ttl">'+esc(ev.name)+'</div><div class="meta">'+fmtDate(occ)+(ev.time?' '+esc(ev.time)+' น.':'')+(ev.who?' · '+esc(ev.who):'')+'</div></div><span class="badge'+(d===0?' red':d===1?' amber':'')+'">'+(d===0?'วันนี้':d===1?'พรุ่งนี้':'อีก '+d+' วัน')+'</span></div>';
+  });
+  document.getElementById('home-events').innerHTML=h||'<div class="empty">ไม่มีนัดใน 7 วันนี้ 🎉</div>';
+  h='';
+  unpaid.slice().sort((a,b)=>(a.day||0)-(b.day||0)).forEach(e=>{
+    h+='<div class="list-item"><div class="info"><div class="ttl">'+esc(e.name)+'</div><div class="meta">ครบกำหนดวันที่ '+esc(e.day)+'</div></div><div class="amt">'+fmtBaht(e.amount)+'</div><button class="btn-pay" onclick="togglePaid('+e.id+')">จ่ายแล้ว</button></div>';
+  });
+  document.getElementById('home-unpaid').innerHTML=h||'<div class="empty">จ่ายครบทุกรายการแล้ว ✓</div>';
+
+  updateAlertBadges();
+}
+
+/* ---------- QR / Backup ---------- */
+function makeQR(){
+  const url=document.getElementById('qr-url').value.trim();
+  if(!url){alert('วางลิงก์ก่อนนะครับ');return}
+  document.getElementById('qrbox').innerHTML='';
+  new QRCode(document.getElementById('qrbox'),{text:url,width:190,height:190,colorDark:'#0a2d6e'});
+  document.getElementById('qr-url-label').textContent=url;
+}
+function useCurrentURL(){document.getElementById('qr-url').value=location.href;makeQR();}
+function exportData(){
+  const blob=new Blob([JSON.stringify({hub:db,fuel},null,2)],{type:'application/json'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);
+  a.download='family_hub_backup_'+todayISO()+'.json';a.click();
+}
+function importData(ev){
+  const f=ev.target.files[0];if(!f)return;
+  const r=new FileReader();
+  r.onload=()=>{try{
+    const d=JSON.parse(r.result);
+    if(d.hub){db={expenses:toArr(d.hub.expenses),events:toArr(d.hub.events),alertCleared:d.hub.alertCleared||{}};db.expenses.forEach(e=>e.paid=e.paid||{});saveHub();}
+    if(d.fuel){fuel=toArr(d.fuel);saveFuel();}
+    render();alert('กู้ข้อมูลเรียบร้อย ✓');
+  }catch(e){alert('ไฟล์ไม่ถูกต้อง: '+e.message)}};
+  r.readAsText(f);
+}
+
+/* ---------- init ---------- */
+document.getElementById('fu-date').value=todayISO();
+render();
+/* ถ้า Firebase ช้า/ออฟไลน์ ให้เด้งแจ้งเตือนจากข้อมูลในเครื่องแทน */
+setTimeout(()=>{if(!hubLoaded){hubLoaded=true;maybeShowAlerts();}},2500);
+</script>
+</body>
+</html>
